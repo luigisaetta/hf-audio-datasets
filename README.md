@@ -14,6 +14,7 @@ This repo contains all the work done to prepare utilities for creating **Audio d
 * [How-to upload a set of files to OCI Object Storage](./upload_to_oss.ipynb)
 * [How-to create the HF dataset from local files](./prepare_dataset.ipynb)
 * [Upload HF dataset to Object Storage](./upload_dataset_to_oss.ipynb)
+* [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
 
 ## Data examples used
 * [ATCO2 dataset](https://www.atco2.org/data)
