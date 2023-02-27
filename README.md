@@ -13,6 +13,7 @@ This repo contains all the work done to prepare utilities for creating **Audio d
 * [How-to download a set of wav files from OCI Object Storage](./download_from_oss.ipynb)
 * [How-to upload a set of files to OCI Object Storage](./upload_to_oss.ipynb)
 * [How-to create the HF dataset from local files](./prepare_dataset.ipynb)
+* [Load HF dataset from local dir](./test_load_from_local.ipynb)
 * [Upload HF dataset to Object Storage](./upload_dataset_to_oss.ipynb)
 * [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
 
