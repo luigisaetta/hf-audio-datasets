@@ -3,9 +3,14 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
-This repository contains all the work done to prepare utilities for creating **Audio datasets** from files, and checking audio.
+This repository contains all the work done to prepare utilities for: 
+* creating **Audio datasets** from files
+* work with Audio datasets
+* check audio
+* evaluate performance of ASR models
+* ...
 
-You will find here the code to create an HF **Audio dataset** from a set of wav files (+ transcriptions) 
+You will find here, for example, the code to create an HF **Audio dataset** from a set of wav files (+ transcriptions) 
 donwloaded from **OCI Object Storage**
 
 ## Features
@@ -22,6 +27,7 @@ donwloaded from **OCI Object Storage**
 * [Upload HF dataset to Object Storage](./upload_dataset_to_oss.ipynb)
 * [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
 * [Compute the size of an HF audio dataset](./compute_dataset_size_from_hf.ipynb)
+* [How to evaluate WER](./evaluate_wer.ipynb)
 
 ## Data examples used
 * [ATCO2 dataset](https://www.atco2.org/data)
