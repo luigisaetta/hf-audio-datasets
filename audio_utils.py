@@ -1,4 +1,6 @@
 import soundfile as sf
+import torchaudio
+from tqdm import tqdm
 
 
 def check_channels(f_name, n_channels):
@@ -42,3 +44,48 @@ def check_sampling_rate(f_name, sampling_rate):
         v_rit = False
 
     return v_rit
+
+
+# for audio augmentation
+# from https://jonathanbgn.com/2021/08/30/audio-augmentation.html
+
+
+class AudioSpeedChanger:
+    def __init__(self, sample_rate):
+        self.sample_rate = sample_rate
+
+    def __call__(self, audio_data, speed_factor):
+        # limits what could be done
+        assert speed_factor in [0.9, 1.0, 1.1]
+
+        if speed_factor == 1.0:  # no change
+            return audio_data
+
+        # change speed and resample to original rate:
+        sox_effects = [
+            ["speed", str(speed_factor)],
+            ["rate", str(self.sample_rate)],
+        ]
+        transformed_audio, _ = torchaudio.sox_effects.apply_effects_tensor(
+            audio_data, self.sample_rate, sox_effects
+        )
+
+        return transformed_audio
+
+
+def compute_duration_min(ds, sampling_rate):
+    """
+    Input is train or test dataset
+    """
+    tot_duration_secs = 0
+
+    for row in tqdm(ds["audio"]):
+        row_audio = row["array"]
+
+        duration = row_audio.shape[0] / sampling_rate
+
+        tot_duration_secs += duration
+
+    tot_duration_min = tot_duration_secs / 60.0
+
+    return round(tot_duration_min, 1)
