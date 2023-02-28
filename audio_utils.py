@@ -75,7 +75,7 @@ class AudioSpeedChanger:
 
 def compute_duration_min(ds, sampling_rate):
     """
-    Input is train or test dataset
+    Input is train or test HF dataset
     """
     tot_duration_secs = 0
 

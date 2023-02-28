@@ -36,6 +36,11 @@ I have found that:
 In this [NB](./prepare_dataset_augmented.ipynb) I show how to increase 3X the size of the original dataset
 creating, for each original wav file, new versions at 0.9 and 1.1 the original speed.
 
+## ATCO2 utilities
+To simplify the work on ATCO2 dataset, some utilities have been developed.
+
+For example, in [this NB](./extract_txt_from_atco2_xml.ipynb) we show how to extract the text (transcriptions) from ATCO2.
+
 ## Wiki
 Some technical details (autorization, ...) are covered in the repo's Wiki.
 
