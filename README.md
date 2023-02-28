@@ -7,7 +7,7 @@ This repository contains all the work done to prepare utilities for:
 * creating **Audio datasets** from files
 * work with Audio datasets
 * check audio
-* evaluate performance of ASR models
+* evaluate performance of Automatic Speech Recognition (ASR) models
 * ...
 
 You will find here, for example, the code to create an HF **Audio dataset** from a set of wav files (+ transcriptions) 
@@ -17,6 +17,7 @@ donwloaded from **OCI Object Storage**
 * copy files from/to OCI Object Storage, using ocifs
 * create the Audio dataset from files
 * effective Data Augmentation for ASR
+* evaluate WER
 
 ## Code examples
 * [How-to download a set of wav files from OCI Object Storage](./download_from_oss.ipynb)
@@ -41,6 +42,14 @@ I have found that:
 
 In this [NB](./prepare_dataset_augmented.ipynb) I show how to increase 3X the size of the original dataset
 creating, for each original wav file, new versions at 0.9 and 1.1 the original speed.
+
+## Metrics for ASR
+One of the most widely used metric is Word Error Rate (WER).
+
+A perfect model has a WER = 0.
+A very bad model has WER = 1.
+
+You can find more details [here](https://huggingface.co/spaces/evaluate-metric/wer) and in [this White Paper](https://www.cs.cmu.edu/~roni/papers/eval-metrics-bntuw-9802.pdf)
 
 ## ATCO2 utilities
 To simplify the work on ATCO2 dataset, some utilities have been developed.
