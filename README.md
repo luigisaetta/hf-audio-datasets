@@ -5,10 +5,12 @@
 
 This repository contains all the work done to prepare utilities for creating **Audio datasets** from files, and checking audio.
 
-You will find here the code to create an HF audio dataset from a set of wav files (+ transcriptions) donwloade from Object Storage
+You will find here the code to create an HF **Audio dataset** from a set of wav files (+ transcriptions) 
+donwloaded from **OCI Object Storage**
 
 ## Features
 * copy files from/to OCI Object Storage, using ocifs
+* create the Audio dataset from files
 * effective Data Augmentation for ASR
 
 ## Code examples
@@ -35,6 +37,6 @@ In this [NB](./prepare_dataset_augmented.ipynb) I show how to increase 3X the si
 creating, for each original wav file, new versions at 0.9 and 1.1 the original speed.
 
 ## Wiki
-Some technical details (autorization) are covered in the repo's Wiki.
+Some technical details (autorization, ...) are covered in the repo's Wiki.
 
 
