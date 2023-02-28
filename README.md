@@ -19,7 +19,7 @@ You will find here the code to create an HF audio dataset from a set of wav file
 * [Load HF dataset from local dir](./test_load_from_local.ipynb)
 * [Upload HF dataset to Object Storage](./upload_dataset_to_oss.ipynb)
 * [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
-* [Compute the size of an HF audio dataset] (./compute_dataset_size_from_hf.ipynb)
+* [Compute the size of an HF audio dataset](./compute_dataset_size_from_hf.ipynb)
 
 ## Data examples used
 * [ATCO2 dataset](https://www.atco2.org/data)
