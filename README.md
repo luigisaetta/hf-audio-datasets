@@ -29,7 +29,7 @@ donwloaded from **OCI Object Storage**
 * [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
 * [Compute the size of an HF audio dataset](./compute_dataset_size_from_hf.ipynb)
 * [How to evaluate WER](./evaluate_wer.ipynb)
-* [How to evaluate an ASR Model (Whisper)(./whisper_pipeline_evaluate_atco2.ipynb)
+* [How to evaluate an ASR Model (Whisper)](./whisper_pipeline_evaluate_atco2.ipynb)
 
 ## Data examples used
 * [ATCO2 dataset](https://www.atco2.org/data)
