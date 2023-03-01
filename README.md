@@ -29,6 +29,7 @@ donwloaded from **OCI Object Storage**
 * [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
 * [Compute the size of an HF audio dataset](./compute_dataset_size_from_hf.ipynb)
 * [How to evaluate WER](./evaluate_wer.ipynb)
+* [How to evaluate an ASR Model (Whisper)(./whisper_pipeline_evaluate_atco2.ipynb)
 
 ## Data examples used
 * [ATCO2 dataset](https://www.atco2.org/data)
@@ -51,6 +52,9 @@ A very bad model has WER = 1.
 
 You can find more details on WER [here](https://huggingface.co/spaces/evaluate-metric/wer) 
 and in [this White Paper](https://www.cs.cmu.edu/~roni/papers/eval-metrics-bntuw-9802.pdf)
+
+**Text normalization**: to get a fair WER you could need to apply normalization to text (all lowercase, etc...).
+In this [NB](./whisper_pipeline_evaluate_atco2.ipynb) I'm using the same normalization techniques as in OpenAI Whisper code base.
 
 ## ATCO2 utilities
 To simplify the work on ATCO2 dataset, some utilities have been developed.
