@@ -44,12 +44,13 @@ In this [NB](./prepare_dataset_augmented.ipynb) I show how to increase 3X the si
 creating, for each original wav file, new versions at 0.9 and 1.1 the original speed.
 
 ## Metrics for ASR
-One of the most widely used metric is Word Error Rate (WER).
+One of the most widely used metric for ASR is **Word Error Rate (WER)**.
 
 A perfect model has a WER = 0.
 A very bad model has WER = 1.
 
-You can find more details [here](https://huggingface.co/spaces/evaluate-metric/wer) and in [this White Paper](https://www.cs.cmu.edu/~roni/papers/eval-metrics-bntuw-9802.pdf)
+You can find more details on WER [here](https://huggingface.co/spaces/evaluate-metric/wer) 
+and in [this White Paper](https://www.cs.cmu.edu/~roni/papers/eval-metrics-bntuw-9802.pdf)
 
 ## ATCO2 utilities
 To simplify the work on ATCO2 dataset, some utilities have been developed.
