@@ -17,6 +17,7 @@ donwloaded from **OCI Object Storage**
 * copy files from/to OCI Object Storage, using ocifs
 * create the Audio dataset from files
 * effective Data Augmentation for ASR
+* merge two datasets to have a bigger one
 * evaluate WER
 
 ## Code examples
@@ -27,12 +28,14 @@ donwloaded from **OCI Object Storage**
 * [Load HF dataset from local dir](./test_load_from_local.ipynb)
 * [Upload HF dataset to Object Storage](./upload_dataset_to_oss.ipynb)
 * [Download HF dataset from Object Storage](./download_dataset_from_oss.ipynb)
+* [How to merge two audio datasets](./merge_datasets.ipynb)
 * [Compute the size of an HF audio dataset](./compute_dataset_size_from_hf.ipynb)
 * [How to evaluate WER](./evaluate_wer.ipynb)
 * [How to evaluate an ASR Model (Whisper)](./whisper_pipeline_evaluate_atco2.ipynb)
 
 ## Data examples used
 * [ATCO2 dataset](https://www.atco2.org/data)
+* [ATCOSIM](https://www.spsc.tugraz.at/databases-and-tools/atcosim-air-traffic-control-simulation-speech-corpus.html)
 
 ## Data Augmentation for ASR
 Not every technique is working if you want to augment data for ASR.
